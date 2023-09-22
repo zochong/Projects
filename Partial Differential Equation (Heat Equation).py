@@ -26,7 +26,11 @@ for j in range(1, m):
        T[i,j] = factor*T[i-1,j-1] + (1-2*factor)*T[i,j-1] + factor*T[i+1,j-1]
 
 
-plt.plot(T)
+R = np.linspace(1,0,m)
+B = np.linspace(0,1,m)
+G = 0
+for j in range(m):
+    plt.plot(x,T[:,j], color = [R[j],G,B[j]])
 plt.legend(t)
 plt.xlabel('distance')
 plt.ylabel('temperature')
