@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 h = 0.025
 k = 0.025
 x = np.arange(0,1+h,h).round(3)
-t = np.arange(0,0.1+k,k).round(3)
+t = np.arange(0,0.15+k,k).round(3)
 
 boundaryCond = [0,0]
 initialCond = np.sin(np.pi*x)
