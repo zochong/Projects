@@ -1,14 +1,8 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
+# This project explores modelling the 1-D heat equation, a partial differential equation that describes the flow of heat through a system.
 
 
 import numpy as np
 import matplotlib.pyplot as plt
-
-
-# In[30]:
 
 
 h = 0.025
@@ -32,16 +26,12 @@ for j in range(1, m):
        T[i,j] = factor*T[i-1,j-1] + (1-2*factor)*T[i,j-1] + factor*T[i+1,j-1]
 
 
-# In[31]:
-
-
 plt.plot(T)
 plt.legend(t)
 plt.xlabel('distance')
 plt.ylabel('temperature')
 
 
-# In[ ]:
 
 
 
