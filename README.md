@@ -1,2 +1,3 @@
 # Projects
-All my coding projects are here
+All my coding projects are here, if there any questions about any projects, contact me at: zochong@asu.edu 
+
